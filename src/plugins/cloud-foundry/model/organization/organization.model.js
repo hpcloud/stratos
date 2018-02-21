@@ -373,7 +373,7 @@
               _.forEach(apps, function (app) {
                 // Only count running apps, like the CF API would do
                 if (app.entity.state === 'STARTED') {
-                  totalMem += parseInt(app.entity.memory, 10);
+                  totalMem += parseInt(app.entity.memory, 10) * parseInt(app.entity.instances, 10);
                 }
               });
             });
