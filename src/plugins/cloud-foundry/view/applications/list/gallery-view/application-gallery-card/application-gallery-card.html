@@ -11,7 +11,7 @@
     <dt translate>Instances</dt>
     <dd ng-if="applicationGalleryCardCtrl.canShowStats">{{ applicationGalleryCardCtrl.app.instanceCount }} / {{ applicationGalleryCardCtrl.app.entity.instances }}</dd>
     <dd ng-if="!applicationGalleryCardCtrl.canShowStats">0 / {{ applicationGalleryCardCtrl.app.entity.instances }}</dd>
-    <dt translate>Disk Quota</dt>
+    <dt translate>Instance Disk Quota</dt>
     <dd>{{ applicationGalleryCardCtrl.app.entity.disk_quota | mbToHumanSize }}</dd>
     <dt translate>Instance Memory</dt>
     <dd>{{ applicationGalleryCardCtrl.app.entity.memory | mbToHumanSize }}</dd>
